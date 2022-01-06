@@ -1,0 +1,123 @@
+
+        body
+
+        {
+            box-sizing: border-box;
+            margin: 
+            0;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+        #header{
+            background-color: #222;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            /* position: sticky;
+  top: 0;
+  align-self: flex-start;             */
+        }
+        nav{
+            position: sticky;
+            top: 0;
+  align-self: flex-start;     
+        }
+
+        .list{
+            display: flex;
+            /* align-content: center; */
+            align-items: center;
+            /* justify-content: space-around; */
+            list-style-type: none;
+            /* margin: 25px; */
+            font-size: 19px;
+
+            }
+
+        .list li{
+            padding-left: 25px;
+            /* align-items: center; */
+       
+        }
+        .list li a {
+            color: #fff;
+            text-decoration: none;
+        } 
+        .container{
+            height: 90vh;
+            color: white;
+            text-transform: capitalize;
+            font-size: 150%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+            ;
+            background-size: cover
+            ;
+        }
+        div.container p {
+            text-align: center;
+        }
+        .text{
+            font-size: 22px;
+            line-height: 2;
+        }
+        #active{
+            color:  #c0392b
+        }
+        li a:hover{
+             color: #c0392b
+        }
+        .content{
+            width: 100%;
+            display: flex;
+            /* justify-content: center; */
+            flex-direction: column;
+            align-items: center;
+            /* align-content: center */
+            ;
+            /* background-color: violet */
+            ;
+        }
+        .content .part1{
+            /* background-color: turquoise; */
+            width: 90%;
+        }
+        .content .part2{
+            width: 90%;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+            .list{
+                flex-direction: column;
+                align-items: center;
+        
+            }
+            #header{
+                flex-direction: column;
+top: unset;
+            }
+            #header h1{
+                text-align: center;
+            }
+            ul.list , .list li{
+                padding-left: 0;
+            }
+            ul.list > li {
+                margin: 10px;
+            }
+
+        }   
